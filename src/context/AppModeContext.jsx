@@ -36,13 +36,15 @@ export function AppModeProvider({ children }) {
     setCart((c) => c.filter((x) => !(x.id === id && x.size === size)))
   }, [])
 
+  const clearCart = useCallback(() => setCart([]), [])
+
   const value = useMemo(
     () => ({
       mode, setMode, products, refreshProducts, searchQuery, setSearchQuery,
-      activeCategory, setActiveCategory, cart, addToCart, removeFromCart,
+      activeCategory, setActiveCategory, cart, addToCart, removeFromCart, clearCart,
       selectedProduct, setSelectedProduct, userRewards, userName, drawer, setDrawer,
     }),
-    [mode, products, refreshProducts, searchQuery, activeCategory, cart, addToCart, removeFromCart, selectedProduct, userRewards, userName, drawer]
+    [mode, products, refreshProducts, searchQuery, activeCategory, cart, addToCart, removeFromCart, clearCart, selectedProduct, userRewards, userName, drawer]
   )
   return <AppModeContext.Provider value={value}>{children}</AppModeContext.Provider>
 }

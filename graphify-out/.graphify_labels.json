@@ -1,1 +1,4 @@
-{"0": "package.json", "1": "DeloreanPreloader.jsx", "2": "@tailwindcss/vite", "3": "react", "4": "eslint.config.js", "5": "devDependencies", "6": "scripts", "7": "eslint-plugin-react", "8": "eslint-plugin-react-refresh", "9": "globals"}
+{
+  "1": "DeloreanPreloader.jsx",
+  "6": "scripts"
+}

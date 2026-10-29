@@ -84,3 +84,18 @@ html {
     transition-duration: 1ms !important;
   }
 }
+
+/* Hero: capas guiadas por --p (0 → 1, de visible a fuera de pantalla) que escribe useScrollProgress */
+.cine-hero { --p: 0; }
+.cine-dark { opacity: calc(1 - var(--p) * 1.25); }
+.cine-marble {
+  background-color: #F8F9FA;
+  background-image:
+    radial-gradient(120% 60% at 15% 20%, rgba(17, 17, 17, 0.04), transparent 60%),
+    radial-gradient(80% 50% at 85% 75%, rgba(255, 107, 0, 0.06), transparent 65%),
+    linear-gradient(115deg, transparent 40%, rgba(17, 17, 17, 0.035) 41%, transparent 43%),
+    linear-gradient(160deg, transparent 62%, rgba(17, 17, 17, 0.03) 63%, transparent 65%);
+}
+.cine-frame { transform: scale(calc(1 - var(--p) * 0.08)); border-radius: calc(28px + var(--p) * 12px); }
+.cine-copy { opacity: calc(1 - var(--p) * 1.6); transform: translateY(calc(var(--p) * -40px)); }
+.cine-mark { opacity: calc(1 - var(--p) * 0.85); transform: scale(calc(1 + var(--p) * 0.35)) rotate(calc(var(--p) * -8deg)); }

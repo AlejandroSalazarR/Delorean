@@ -7,7 +7,7 @@ const link = 'transition-colors hover:text-[#FF6B00]'
 export default function Footer() {
   return (
     <footer className="border-t border-[rgba(0,0,0,0.06)] bg-white">
-      <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-[2fr_1fr_1fr]">
+      <div className="mx-auto grid w-[94%] max-w-[1720px] gap-12 py-16 md:grid-cols-[2fr_1fr_1fr]">
         <div className="max-w-md">
           <div className="flex items-center gap-2">
             <Bolt className="h-7 w-auto" />
@@ -35,7 +35,7 @@ export default function Footer() {
               <a href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noreferrer" className={link}>WhatsApp directo</a>
             </li>
             <li>
-              <a href="#rewards" className={link}>Puntos Delorean</a>
+              <a href="#actualizaciones" className={link}>Actualizaciones</a>
             </li>
             <li>Copacabana, Antioquia</li>
           </ul>

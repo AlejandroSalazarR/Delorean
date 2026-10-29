@@ -100,6 +100,8 @@ function ModalBody({ product, onClose }) {
             {status.label}
           </p>
 
+          {product.description && <p className="mt-5 max-w-prose text-[#111111]/70">{product.description}</p>}
+
           {product.finishDetails && (
             <div className="mt-6 rounded-[20px] bg-[#F8F9FA] p-4">
               <h3 className="text-sm font-semibold">Acabados y Construcción</h3>

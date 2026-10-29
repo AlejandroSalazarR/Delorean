@@ -2,3 +2,5 @@ node_modules
 dist
 graphify-out/cache
 .claude/settings.local.json
+graphify-out/20*/
+graphify-out/*.pending.json

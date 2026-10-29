@@ -5,7 +5,6 @@ import RewardsBadge from '../rewards/RewardsBadge'
 import { useAppMode } from '../../context/AppModeContext'
 import { WHATSAPP_NUMBER, formatCOP } from '../../services/mockDatabase'
 
-const CATEGORIES = ['Todas', 'Streetwear', 'Anime', 'Cultura Pop', 'Coleccionismo']
 const hairline = 'border border-[rgba(0,0,0,0.06)]'
 const ease = 'ease-[cubic-bezier(0.22,1,0.36,1)]'
 
@@ -95,13 +94,13 @@ function AvatarMenu() {
 }
 
 export default function Navbar() {
-  const { mode, searchQuery, setSearchQuery, activeCategory, setActiveCategory, cart, setDrawer } = useAppMode()
+  const { mode, searchQuery, setSearchQuery, cart, setDrawer } = useAppMode()
   const count = cart.reduce((n, x) => n + x.qty, 0)
   const total = cart.reduce((n, x) => n + x.qty * x.price, 0)
 
   return (
     <header className="sticky top-0 z-40 border-b border-[rgba(0,0,0,0.06)] bg-white/85 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-6 gap-y-3 px-4 py-3 sm:px-6">
+      <div className="mx-auto flex w-[94%] max-w-[1720px] flex-wrap items-center gap-x-6 gap-y-3 py-3">
         <a href="/" className="flex items-center gap-2">
           <Bolt className="h-7 w-auto" />
           <span className="text-xl font-black tracking-[-0.04em]">DELOREAN</span>
@@ -132,6 +131,11 @@ export default function Navbar() {
         </form>
 
         <div className="ml-auto flex items-center gap-3 md:ml-0">
+          {mode === 'client' && (
+            <a href="#actualizaciones" className="text-sm font-semibold transition-colors hover:text-[#FF6B00] max-sm:hidden">
+              Actualizaciones
+            </a>
+          )}
           <button
             type="button"
             onClick={() => setDrawer('cart')}
@@ -145,25 +149,6 @@ export default function Navbar() {
           <AvatarMenu />
         </div>
 
-        <nav aria-label="Categorías" className="-mx-1 flex w-full gap-2 overflow-x-auto px-1 pb-0.5">
-          {CATEGORIES.map((c) => {
-            const value = c === 'Todas' ? 'Todos' : c
-            const active = activeCategory === value
-            return (
-              <button
-                key={c}
-                type="button"
-                aria-pressed={active}
-                onClick={() => setActiveCategory(value)}
-                className={`shrink-0 rounded-full px-4 py-1.5 text-sm transition-colors duration-300 ${
-                  active ? 'bg-[#FF6B00] font-semibold text-white' : `bg-white hover:bg-[#F8F9FA] ${hairline}`
-                }`}
-              >
-                {c}
-              </button>
-            )
-          })}
-        </nav>
       </div>
     </header>
   )
