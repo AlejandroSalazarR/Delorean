@@ -1,0 +1,76 @@
+{
+  ".claude/settings.json": {
+    "mtime": 1793254450.6790671,
+    "seen": 1793254842.3830557,
+    "ast_hash": "3ac995fbf93552a991ecab9b63f776aa",
+    "semantic_hash": "3ac995fbf93552a991ecab9b63f776aa",
+    "ast_empty": true
+  },
+  "eslint.config.js": {
+    "mtime": 1793254775.693642,
+    "seen": 1793254842.3830557,
+    "ast_hash": "bfe13b9e25d0af7959d0396aa103d88c",
+    "semantic_hash": "bfe13b9e25d0af7959d0396aa103d88c"
+  },
+  "package.json": {
+    "mtime": 1793254794.7926974,
+    "seen": 1793254842.3830557,
+    "ast_hash": "67ed79a6f90fca09622811e7b7cd31c1",
+    "semantic_hash": "67ed79a6f90fca09622811e7b7cd31c1"
+  },
+  "skills-lock.json": {
+    "mtime": 1793254393.5599675,
+    "seen": 1793254842.3830557,
+    "ast_hash": "568943529bc616c93ba4cd199ed98117",
+    "semantic_hash": "568943529bc616c93ba4cd199ed98117",
+    "ast_empty": true
+  },
+  "src/App.jsx": {
+    "mtime": 1793254834.809036,
+    "seen": 1793254842.3830557,
+    "ast_hash": "7d2267ac4bd57d082a9970a9af201072",
+    "semantic_hash": "7d2267ac4bd57d082a9970a9af201072"
+  },
+  "src/components/layout/DeloreanPreloader.jsx": {
+    "mtime": 1793254761.6188931,
+    "seen": 1793254842.3830557,
+    "ast_hash": "ffb77d8525b68f76711574fc183f028e",
+    "semantic_hash": "ffb77d8525b68f76711574fc183f028e"
+  },
+  "src/components/layout/PixelSprite.jsx": {
+    "mtime": 1793254761.6359103,
+    "seen": 1793254842.384056,
+    "ast_hash": "b0bf031f2fcbcf6784a854e8c4b26740",
+    "semantic_hash": "b0bf031f2fcbcf6784a854e8c4b26740"
+  },
+  "src/components/layout/Speedometer.jsx": {
+    "mtime": 1793254761.6512628,
+    "seen": 1793254842.384056,
+    "ast_hash": "73540d59375a22424456675e83d6edb2",
+    "semantic_hash": "73540d59375a22424456675e83d6edb2"
+  },
+  "src/components/layout/chibis.js": {
+    "mtime": 1793254761.669284,
+    "seen": 1793254842.384056,
+    "ast_hash": "2121f26fdf107d99a39cce8d38029c29",
+    "semantic_hash": "2121f26fdf107d99a39cce8d38029c29"
+  },
+  "src/components/ui/Bolt.jsx": {
+    "mtime": 1793254761.7102268,
+    "seen": 1793254842.3845599,
+    "ast_hash": "7a35804a55e945a91991878b9a77d088",
+    "semantic_hash": "7a35804a55e945a91991878b9a77d088"
+  },
+  "src/main.jsx": {
+    "mtime": 1793254775.7874005,
+    "seen": 1793254842.3845599,
+    "ast_hash": "e13723e2574429d9a6d849727e3ff695",
+    "semantic_hash": "e13723e2574429d9a6d849727e3ff695"
+  },
+  "vite.config.js": {
+    "mtime": 1793254783.9421613,
+    "seen": 1793254842.3845599,
+    "ast_hash": "5b641ab5f85eff4b0b9acec3417ca9b5",
+    "semantic_hash": "5b641ab5f85eff4b0b9acec3417ca9b5"
+  }
+}
