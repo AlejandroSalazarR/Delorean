@@ -161,6 +161,7 @@ function DrawerPanel({ view, onClose }) {
                       <span className={`flex h-4 w-4 shrink-0 items-center justify-center rounded-full border-2 ${checkout === v ? 'border-[#FF6B00]' : 'border-[#111111]/20'}`}>
                         {checkout === v && <span className="h-1.5 w-1.5 rounded-full bg-[#FF6B00]" />}
                       </span>
+                      {v === 'whatsapp' && <MessageCircle size={18} aria-hidden="true" className="shrink-0 text-[#25D366]" />}
                       {label}
                       <span className="ml-auto text-xs font-normal text-[#111111]/50">{v === 'online' ? 'Wompi o Mercado Pago' : 'Te asesoramos'}</span>
                     </button>
